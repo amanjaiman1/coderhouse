@@ -17,3 +17,4 @@ export { default as RestAPI } from './Rest-api.png';
 export { default as SpringBoot } from './springboot.png';
 export { default as SQL } from './SQL.png';
 export { default as top } from './top_style.png';
+export { default as trial } from './trial.png';
