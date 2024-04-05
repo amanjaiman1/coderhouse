@@ -8,6 +8,11 @@ import axios from 'axios';
 
 const App = () => {
   const { loading } = useSelector((state) => state.loaders);
+  
+  // run a fucntion after every 9 minutes
+  setInterval(async () => {
+    await axios.get('https://coders-house-mcvg.onrender.com/');
+  }, 1000 * 60 * 9);
 
   return (
     <div>
