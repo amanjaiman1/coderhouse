@@ -64,7 +64,7 @@ const courses = {
             }
         ],
         category: 'Swayam Batch'
-    },    
+    },
 }
 
 const plans = [
