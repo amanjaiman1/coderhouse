@@ -62,8 +62,9 @@ const courses = {
                 title: 'Oracle',
                 image: images.Oracle,
             }
-        ]
-    }
+        ],
+        category: 'Swayam Batch'
+    },    
 }
 
 const plans = [
