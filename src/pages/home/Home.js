@@ -2,24 +2,39 @@ import React, { useState } from 'react'
 import { Data, Green, PagesWithNavbar, Title } from '../../common/components'
 import { lineBlend, trial } from '../../common/images';
 import { excellentInfra, expertMentor, growthOriented } from '../../common/images';
+import Advantage from '../../common/components/advantage/Advantage';
 import { message } from 'antd';
-
 const Home = () => {
 
   const keyFeatures = [
     {
       label: 'Excellent Infrastructure',
-      description: 'We have the best infrastructure for our students to learn and grow.',
+      description: [
+      "We have the best infrastructure for our students to learn and grow.",
+      "We have the best infrastructure for our students to learn and grow.",
+      "We have the best infrastructure for our students to learn and grow.",
+      "We have the best infrastructure for our students to learn and grow."
+    ],
       logo: excellentInfra
     },
     {
       label: 'Expert Mentor Team',
-      description: 'Our faculty members are experts in their respective fields.',
+      description: [
+        'Our faculty members are experts in their respective fields.',
+        'Our faculty members are experts in their respective fields.',
+        'Our faculty members are experts in their respective fields.',
+        'Our faculty members are experts in their respective fields.'
+      ],
       logo: expertMentor
     },
     {
       label: 'Growth Oriented Environment',
-      description: 'We provide placement assistance to all our students.',
+      description: [
+        'We provide placement assistance to all our students.',
+        'We provide placement assistance to all our students.',
+        'We provide placement assistance to all our students.',
+        'We provide placement assistance to all our students.'
+      ],
       logo: growthOriented
     }
   ]
@@ -94,6 +109,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Advantage description={keyFeatures}/>
       <div className='text-center flex justify-center w-full'>
         <Data />
       </div>

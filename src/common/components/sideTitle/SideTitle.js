@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SideTitle = ({ title }) => {
+const SideTitle = ({ title, textClass }) => {
     const firstTitle = title?.split(':')[0];
     const restTitle = title?.split(':')[1];
 
@@ -15,9 +15,9 @@ const SideTitle = ({ title }) => {
     const restTitle2 = restTitle?.split(' ').slice((restLen / 2) + 1).join(' ');
 
     return (
-        <header className='text-4xl mt-8 mb-8 font-medium'>
-            <span className='border-b-4 text-secondary border-primary leading-[4rem] sm:leading-3'>
-                {firstTitle1} <span className='text-primary border-b-4 border-secondary'>{firstTitle2}</span> : {restTitle1} <span className='text-primary border-b-4 border-secondary'>{restTitle2}</span>
+        <header className={`font-medium`}>
+            <span className={`text-4xl ${textClass} text-secondary leading-[4rem] sm:leading-3`}>
+                {firstTitle1} <span className='text-primary'>{firstTitle2}</span>{restTitle1} <span className='text-primary border-b-4 border-secondary'>{restTitle2}</span>
             </span>
         </header>
     )
