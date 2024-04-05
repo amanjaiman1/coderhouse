@@ -10,11 +10,11 @@ const Home = () => {
     {
       label: 'Excellent Infrastructure',
       description: [
-      "We have the best infrastructure for our students to learn and grow.",
-      "We have the best infrastructure for our students to learn and grow.",
-      "We have the best infrastructure for our students to learn and grow.",
-      "We have the best infrastructure for our students to learn and grow."
-    ],
+        "We have the best infrastructure for our students to learn and grow.",
+        "We have the best infrastructure for our students to learn and grow.",
+        "We have the best infrastructure for our students to learn and grow.",
+        "We have the best infrastructure for our students to learn and grow."
+      ],
       logo: excellentInfra
     },
     {
@@ -109,9 +109,11 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Advantage description={keyFeatures}/>
       <div className='text-center flex justify-center w-full'>
         <Data />
+      </div>
+      <div className="mt-16">
+        <Advantage description={keyFeatures} />
       </div>
     </PagesWithNavbar>
   )

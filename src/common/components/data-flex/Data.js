@@ -44,7 +44,7 @@ const Data = () => {
 
 
     return (
-        <div className="flex flex-row rounded-2xl h-28 w-[80%] bg-white justify-between items-center">
+        <div className="flex flex-row rounded-2xl shadow-lg h-28 w-[80%] bg-white justify-between items-center">
             {data.map((item, index) => (
                 <div key={index} className="flex flex-row items-start gap-4 px-4">
                     {item.logo}
