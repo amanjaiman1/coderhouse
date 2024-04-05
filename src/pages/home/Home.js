@@ -67,7 +67,7 @@ const Home = () => {
             Crafting Future with Code Mastery
           </span>
           <Title title="Coder House" />
-          <img src={trial} alt="style" className='mt-20' />
+          <img src={trial} alt="style" className='mt-20 w-[95%]' />
         </div>
         <div className="flex flex-col w-2/5 px-20">
           <div className="bg-secondary rounded-lg text-white px-8 py-8">
