@@ -17,7 +17,7 @@ const NavbarInfo = () => {
 
 
     return (
-        <div className="flex flex-row w-full items-center justify-center bg-primary text-secondary text-lg py-1">
+        <div className="flex flex-row w-full items-center justify-center bg-primary text-secondary text-[16px] py-1">
             <Link className='text-blue-500 underline' to='/jobs_internship'>Click Here</Link>&nbsp;to check Internship Opportunities at&nbsp;<span className="underline">{companyName[0]} , {companyName[1]}</span>&nbsp;and many more companies for different roles.
         </div>
     )

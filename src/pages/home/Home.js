@@ -68,7 +68,7 @@ const Home = () => {
           <Title title="Coder House" />
           <img src={trial} alt="style" className='mt-20 w-[95%]' />
         </div>
-        <div className="flex flex-col w-2/5 px-20">
+        <div className="flex flex-col w-2/5 px-16">
           <div className="bg-secondary rounded-lg text-white px-8 py-8">
             {/* Form Header */}
             <div className="flex flex-col gap-4">

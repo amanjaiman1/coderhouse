@@ -8,7 +8,7 @@ import { Linkedin } from '../../images';
 const Mentors = () => {
   return (
     <div className="flex flex-col items-center justify-center px-28 ">
-      <div className="text-5xl leading-[4.5rem] text-center font-semibold px-12">
+      <div className="text-4xl leading-[3.4rem] text-center font-semibold px-[7.5rem]">
         We have Industry Experts as <Green text={'Mentor'} /> who guide you with <Green text={'Career Planning'} /> & <Green text={'Interview'} /> Preparation
       </div>
       <div className='text-black w-full'>

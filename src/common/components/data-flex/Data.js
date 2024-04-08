@@ -49,7 +49,7 @@ const Data = () => {
                 <div key={index} className="flex flex-row items-start gap-4 px-4">
                     {item.logo}
                     <div className="flex flex-col items-start gap-2 tracking-wide">
-                        <span className='text-2xl font-medium'><Green text={item.title} /></span>
+                        <span className='text-[22px] font-medium'><Green text={item.title} /></span>
                         <span className='text-md font-normal'>{item.description}</span>
                     </div>
                 </div>

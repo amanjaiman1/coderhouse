@@ -26,13 +26,13 @@ const Navbar = () => {
   }, [isHover, isHoverIndex])
 
   return (
-    <div className='w-full px-36 bg-secondary h-24 flex'>
+    <div className='w-full px-36 bg-secondary h-20 flex'>
       <div className="flex flex-row justify-between w-full">
-        <div className="logo flex flex-row items-center text-4xl gap-4 font-medium">
-          <img src={logo} alt="Logo of Coder House" className='w-16 h-16' />
+        <div className="logo flex flex-row items-center text-3xl gap-4 font-medium">
+          <img src={logo} alt="Logo of Coder House" className='w-[3.5rem] h-[3.5rem]' />
           <Green text={navbarSettings.title} />
         </div>
-        <div className="links flex flex-row text-white gap-8 text-xl tracking-wide items-center">
+        <div className="links flex flex-row text-white gap-6 text-lg tracking-wide items-center">
           {navbarSettings?.items?.map((item, index) => {
             if (item?.type === 'Dropdown') {
               return (
@@ -45,7 +45,7 @@ const Navbar = () => {
                       <DownOutlined className='w-4 h-4' />
                     </span>
                   </div>
-                  <div className={`bg-white rounded-lg ${isHoverIndex === 0 ? 'w-[98.9vw] left-[50%] translate-x-[-50%]' : 'flex-col py-2 gap-y-4'} ${isHover && isHoverIndex === index ? 'flex border absolute top-16 opacity-100' : 'hidden opacity-0'} text-secondary duration-700 transition-all`}>
+                  <div className={`bg-white rounded-lg ${isHoverIndex === 0 ? 'w-[98.9vw] left-[50%] translate-x-[-50%]' : '-mt-2 flex-col py-1 gap-y-4'} ${isHover && isHoverIndex === index ? 'flex border absolute top-16 opacity-100' : 'hidden opacity-0'} text-secondary duration-700 transition-all`}>
                     {isHover && isHoverIndex === index && (
                       <div>
                         {item?.items?.map((subItem, subIndex) => {

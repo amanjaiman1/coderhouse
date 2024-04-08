@@ -12,20 +12,24 @@ const Courses = ({ isNavbar }) => {
 
     const Course = ({ course }) => {
         return (
-            <div className={`flex flex-col gap-4 border rounded-2xl w-96 cursor-pointer hover:scale-105 duration-700 ${isNavbar ? 'pt-3' : 'pt-0'}`}>
+            <div className={`flex flex-col border ${!isNavbar && 'h-[29rem] w-[30%]'} rounded-2xl cursor-pointer hover:scale-105 duration-700 ${isNavbar ? 'pt-3' : 'pt-0'}`}>
                 {!isNavbar && <img src={course.image} alt="" className='rounded-t-2xl' />}
-                <div className="flex flex-col px-4">
-                    <div className="text-xl font-semibold">{course.title}</div>
-                    <div className={`flex flex-col px-2 gap-2 ${isNavbar ? 'py-4' : 'py-6'}`}>
-                        <div className="text-lg font-normal flex gap-2"><CheckOutlined className='text-primary' />{course.duration}</div>
-                        {!isNavbar && <div className="text-lg font-normal flex gap-2"><ClockCircleFilled className='text-primary' />{course.key1}</div>}
-                        <div className="text-lg font-normal flex gap-2"><VideoCameraFilled className='text-primary' />{course.key2}</div>
-                    </div>
+                <div className="flex justify-start items-start pt-3">
+                    <div className="text-xl font-semibold px-4">{course.title}</div>
                 </div>
-                {!isNavbar && <div className="flex flex-row w-full border-t border-0 text-lg font-medium">
-                    <button className='flex flex-row w-1/2 gap-1.5 rounded-l-2xl rounded-t-none items-center justify-center bg-secondary text-primary py-2'>{download}Brochure</button>
-                    <button className='flex flex-row w-1/2 rounded-r-2xl rounded-t-[0px_1rem] items-center justify-center bg-primary py-2'>View Program</button>
-                </div>}
+                <div className="flex flex-col justify-end h-full">
+                    <div className="flex flex-col px-4 justify-between">
+                        <div className={`flex flex-col px-2 gap-2 ${isNavbar ? 'py-4' : 'pb-2'}`}>
+                            <div className="text-lg font-normal flex gap-2"><CheckOutlined className='text-primary' />{course.duration}</div>
+                            {!isNavbar && <div className="text-lg font-normal flex gap-2"><ClockCircleFilled className='text-primary' />{course.key1}</div>}
+                            <div className="text-lg font-normal flex gap-2"><VideoCameraFilled className='text-primary' />{course.key2}</div>
+                        </div>
+                    </div>
+                    {!isNavbar && <div className="flex flex-row w-full border-t border-0 text-lg font-medium">
+                        <button className='flex flex-row w-1/2 gap-1.5 rounded-l-2xl rounded-t-none items-center justify-center bg-secondary text-primary py-2'>{download}Brochure</button>
+                        <button className='flex flex-row w-1/2 rounded-r-2xl rounded-t-[0px_1rem] items-center justify-center bg-primary py-2'>View Program</button>
+                    </div>}
+                </div>
             </div>
         )
     }

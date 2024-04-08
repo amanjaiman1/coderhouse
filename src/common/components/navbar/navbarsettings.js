@@ -10,7 +10,11 @@ const navbarSettings = {
             items: [
                 {
                     key: '1',
-                    label: <Courses isNavbar={true} />,
+                    label: (
+                        <div className='min-h-[24rem]'>
+                            <Courses isNavbar={true} />
+                        </div>
+                    ),
                 }
             ]
         },
