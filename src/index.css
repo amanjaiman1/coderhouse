@@ -2,9 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-
 * {
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-  }
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.ant-tabs-tab-btn {
+  color: #9de045;
+  font-size: 25px;
+}
+.ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #0e2031;
+}
+
+.ant-tabs-nav-list .ant-tabs-ink-bar {
+  background: #0e2031;
+}
+
+.slick-dots li button {
+  background-color: #0e2031 !important;
+  color: #0e2031 !important;
+}
+
+.slick-list{
+  margin-bottom: 20px !important;
+}

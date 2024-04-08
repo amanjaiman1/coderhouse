@@ -10,7 +10,7 @@ const App = () => {
   const { loading } = useSelector((state) => state.loaders);
 
   return (
-    <div>
+    <div className='w-full h-screen'>
       {loading && <Loader />}
       <RouterProvider router={routes} />
     </div>

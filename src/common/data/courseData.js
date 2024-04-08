@@ -1,8 +1,13 @@
 import * as images from '../images';
 
 
-const courses = {
-    swayamBatch: {
+const courses = [
+    {
+        title: 'Swayam Batch : Self Paced Mastery Course',
+        duration: '6 Months',
+        key1: '2000+ Practice Questions',
+        key2: 'Subscription to Coding Library',
+        image: images.MERN,
         higlights: [
             'Curated Content Available in the form of recorded videos.',
             'Subscription to Coding Library',
@@ -63,15 +68,48 @@ const courses = {
                 image: images.Oracle,
             }
         ],
-        category: 'Swayam Batch'
+        category: 'self'
     },
-}
+    {
+        title: 'Full Stack Web Development Bootcamp',
+        duration: '12 Weeks',
+        key1: 'Hands-on Projects',
+        key2: 'Live Coding Sessions',
+        image: images.MERN,
+        category: 'live'
+    },
+    {
+        title: 'Data Science Certification Program',
+        duration: '9 Months',
+        key1: 'Python Programming',
+        key2: 'Machine Learning Algorithms',
+        image: images.MERN,
+        category: 'self'
+    },
+    {
+        title: 'Mobile App Development Course',
+        duration: '4 Months',
+        key1: 'React Native Framework',
+        key2: 'iOS and Android App Development',
+        image: images.MERN,
+        category: 'live'
+    },
+    {
+        title: 'Cloud Computing Masterclass',
+        duration: '6 Weeks',
+        key1: 'AWS and Azure Platforms',
+        key2: 'Deployment Strategies',
+        image: images.MERN,
+        category: 'self'
+    }
+]
 
 const plans = [
     {
+        name: 'Basic',
         title: 'Basic Plan',
-        price: 'Rs. 4999',
-        actualPrice: 'Rs. 1000',
+        price: '₹ 4999',
+        actualPrice: '₹ 1000',
         benifits: [
             {
                 title: 'Full Access to Recorded Videos',
@@ -136,10 +174,10 @@ const plans = [
         ]
     },
     {
+        name: 'Standard',
         title: 'Standard Plan',
-        price: 'Rs. 6999',
-        actualPrice: 'Rs. 1500',
-        description: 'Curated Content Available in the form of recorded videos.',
+        price: '₹ 6999',
+        actualPrice: '₹ 1500',
         benifits: [
             {
                 title: 'Full Access to Recorded Videos',
@@ -204,10 +242,10 @@ const plans = [
         ]
     },
     {
+        name: 'Premium',
         title: 'Premium Plan',
-        price: 'Rs. 8999',
-        actualPrice: 'Rs. 2500',
-        description: 'Curated Content Available in the form of recorded videos.',
+        price: '₹ 8999',
+        actualPrice: '₹ 2500',
         benifits: [
             {
                 title: 'Full Access to Recorded Videos',

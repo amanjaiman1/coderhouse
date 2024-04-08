@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
-import { Data, Green, PagesWithNavbar, Title } from '../../common/components'
+import { Courses, Data, Green, PagesWithNavbar, Programs, Title, Advantage, SideTitle, Mentors } from '../../common/components'
 import { lineBlend, trial } from '../../common/images';
 import { excellentInfra, expertMentor, growthOriented } from '../../common/images';
-import Advantage from '../../common/components/advantage/Advantage';
 import { message } from 'antd';
 const Home = () => {
 
@@ -74,7 +73,7 @@ const Home = () => {
             {/* Form Header */}
             <div className="flex flex-col gap-4">
               <div className='font-semibold'>
-                Request for a <Green text={'Callback !'} />
+                Be a part of The <Green text={'Coder House'} /> Family !!
               </div>
               <div className='text-sm font-normal tracking-wide'>
                 Someone from our <Green text={'Mentors'} /> will connect with you shortly
@@ -112,8 +111,21 @@ const Home = () => {
       <div className='text-center flex justify-center w-full'>
         <Data />
       </div>
-      <div className="mt-16">
+      <div className="mt-16 mb-4">
         <Advantage description={keyFeatures} />
+      </div>
+      <div className="mt-16 mb-4">
+        <Title title={'Our Courses'} />
+        <Courses />
+      </div>
+      <div className="mt-16 mb-4">
+        <Programs />
+      </div>
+      <div className="mt-16 mb-4">
+        <div className='flex justify-center p-3'>
+          <SideTitle textClass={'text-lg tracking-wide'} title={"Our Mentors"} />
+        </div>
+        <Mentors />
       </div>
     </PagesWithNavbar>
   )

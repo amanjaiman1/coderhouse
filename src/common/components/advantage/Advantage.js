@@ -1,5 +1,5 @@
 import React from 'react'
-import { StarOutlined, StarFilled, StarTwoTone, CheckCircleFilled } from '@ant-design/icons'
+import { CheckCircleFilled } from '@ant-design/icons'
 import { SideTitle } from '../sideTitle'
 import { Green } from '../green'
 

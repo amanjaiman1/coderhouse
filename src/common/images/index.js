@@ -18,3 +18,7 @@ export { default as SpringBoot } from './springboot.png';
 export { default as SQL } from './SQL.png';
 export { default as top } from './top_style.png';
 export { default as trial } from './trial.png';
+export { default as MERN } from './mern.jpg';
+export { default as Profile } from './trialprofile.jpg';
+export { default as Google } from './googlelogo.png';
+export { default as Linkedin } from './linkedin.png';
