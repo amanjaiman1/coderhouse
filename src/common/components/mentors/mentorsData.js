@@ -1,4 +1,4 @@
-import { Google, Linkedin } from "../../images";
+import { Linkedin } from "../../images";
 import * as mentorImages from "../../mentor-images";
 
 const mentors = [

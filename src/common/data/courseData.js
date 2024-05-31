@@ -356,4 +356,19 @@ const plans = [
     }
 ]
 
-export { courses, plans, testimonial };
+const notes = [
+    {
+        name: 'Data Structures & Algorithms',
+        recentlyUpdate: '24 April 2024',
+    },
+    {
+        name: 'Full Stack Development',
+        recentlyUpdate: '24 April 2024',
+    },
+    {
+        name: 'Advance Java Development',
+        recentlyUpdate: '24 April 2024',
+    },
+]
+
+export { courses, plans, testimonial, notes };

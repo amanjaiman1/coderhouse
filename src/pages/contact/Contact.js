@@ -77,7 +77,7 @@ const Contact = () => {
           <div className=' w-[250px] h-[250px] text-center justify-center flex flex-col items-center shadow-lg rounded-md'>
             <EmailIcon sx={{ fontSize: 40 }} />
             <h3 className='mt-2 text-[30px]'>Email Us</h3>
-            <p className='mt-2'>+91 9926865740</p>
+            <p className='mt-2'>optus@gmail.com</p>
           </div>
           <div className=' w-[250px] h-[250px] text-center justify-center flex flex-col items-center shadow-lg rounded-md'>
             <LocationOnIcon sx={{ fontSize: 40 }} />
