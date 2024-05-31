@@ -3,6 +3,8 @@ import { Courses, Data, Green, PagesWithNavbar, Programs, Title, Advantage, Side
 import { lineBlend, trial } from '../../common/images';
 import { excellentInfra, expertMentor, growthOriented } from '../../common/images';
 import { message } from 'antd';
+import Gallery from '../../common/components/gallery/Gallery';
+import { Testimonials } from '../../common/components/testimonials';
 const Home = () => {
 
   const keyFeatures = [
@@ -121,6 +123,16 @@ const Home = () => {
       <div className="mt-16 mb-4">
         <Programs />
       </div>
+      <div className="mt-16 mb-4">
+        <Gallery />
+      </div>
+      <div className=' block'>
+        <Title title={'Our Reviews'} /> <br />
+        <div className=" bg-black min-h-[75vh] justify-center items-center align-middle flex">
+          <Testimonials />
+        </div>
+      </div>
+
       <div className="mt-16 mb-4">
         <div className='flex justify-center p-3'>
           <SideTitle textClass={'text-lg tracking-wide'} title={"Our Mentors"} />

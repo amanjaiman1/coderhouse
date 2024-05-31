@@ -1,5 +1,5 @@
 import * as images from '../images';
-
+import { swayamPDF } from '../assets';
 
 const courses = [
     {
@@ -7,13 +7,10 @@ const courses = [
         duration: '6 Months',
         key1: '2000+ Practice Questions',
         key2: 'Subscription to Coding Library',
+        key3: 'My name is Aman Jaiman',
         image: images.MERN,
-        higlights: [
-            'Curated Content Available in the form of recorded videos.',
-            'Subscription to Coding Library',
-            '2000+ Practice Questions.',
-            'Learn wide range of technologies like -'
-        ],
+        brochure: swayamPDF,
+        higlights:'Hi my name is Aman',
         content: [
             {
                 title: 'Core Java/Advance Java',
@@ -76,6 +73,8 @@ const courses = [
         key1: 'Hands-on Projects',
         key2: 'Live Coding Sessions',
         image: images.MERN,
+        brochure: 'path/to/swayam-batch-brochure.pdf',
+        higlights:'Hi my name is Aman',
         category: 'live'
     },
     {
@@ -84,6 +83,8 @@ const courses = [
         key1: 'Python Programming',
         key2: 'Machine Learning Algorithms',
         image: images.MERN,
+        brochure: 'path/to/swayam-batch-brochure.pdf',
+        higlights:'Hi my name is Aman',
         category: 'self'
     },
     {
@@ -92,6 +93,8 @@ const courses = [
         key1: 'React Native Framework',
         key2: 'iOS and Android App Development',
         image: images.MERN,
+        brochure: 'path/to/swayam-batch-brochure.pdf',
+        higlights:'Hi my name is Aman',
         category: 'live'
     },
     {
@@ -100,7 +103,46 @@ const courses = [
         key1: 'AWS and Azure Platforms',
         key2: 'Deployment Strategies',
         image: images.MERN,
+        brochure: 'path/to/swayam-batch-brochure.pdf',
+        higlights:'Hi my name is Aman',
         category: 'self'
+    }
+]
+
+const testimonial = [
+    {
+        name: 'Parth Singhal',
+        date: 123,
+        rating: 4,
+        review:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    },
+
+    {
+        name: 'Parth Singhal',
+        date: 123,
+        rating: 4,
+        review:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    },
+
+    {
+        name: 'Parth Singhal',
+        date: 123,
+        rating: 4,
+        review:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    },
+
+    {
+        name: 'Parth Singhal',
+        date: 123,
+        rating: 4,
+        review:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    },
+
+    {
+        name: 'Parth Singhal',
+        date: 123,
+        rating: 4,
+        review:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     }
 ]
 
@@ -110,6 +152,7 @@ const plans = [
         title: 'Basic Plan',
         price: '₹ 4999',
         actualPrice: '₹ 1000',
+        brochureUrl: swayamPDF,
         benifits: [
             {
                 title: 'Full Access to Recorded Videos',
@@ -178,6 +221,7 @@ const plans = [
         title: 'Standard Plan',
         price: '₹ 6999',
         actualPrice: '₹ 1500',
+        brochureUrl: swayamPDF,
         benifits: [
             {
                 title: 'Full Access to Recorded Videos',
@@ -246,6 +290,7 @@ const plans = [
         title: 'Premium Plan',
         price: '₹ 8999',
         actualPrice: '₹ 2500',
+        brochureUrl: swayamPDF,
         benifits: [
             {
                 title: 'Full Access to Recorded Videos',
@@ -311,4 +356,4 @@ const plans = [
     }
 ]
 
-export { courses, plans };
+export { courses, plans, testimonial };

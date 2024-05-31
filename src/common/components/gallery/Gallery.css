@@ -1,0 +1,21 @@
+/* Gallery.css */
+.gallery-container {
+    width: 50%;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slide-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}

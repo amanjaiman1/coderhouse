@@ -1,0 +1,97 @@
+/* Testimonials.css */
+.testimonials-container {
+    overflow: hidden;
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.imageDiv {
+    position: absolute;
+    transform: translate(650px, -140px); /* Adjust these values as needed */
+}
+
+.testimonial-slide {
+    /* position: relative; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 42vh;
+    border-radius: 100px 10px 200px 10px;
+    padding: 3rem;
+    box-shadow: 0 4px 8px rgba(255, 29, 29, 0.1);
+    overflow: hidden;
+    background-color: rgb(131, 255, 86);
+    margin-top: 100px;
+}
+
+
+.testimonial-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    z-index: 1; /* Ensure it doesn't overlap the image */
+}
+
+.testimonial-text {
+    flex: 1;
+    padding-right: 1rem;
+}
+
+.testimonial-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-rating {
+    font-size: 1.5rem;
+    color: #ffc107; /* Gold color for stars */
+    margin-bottom: 1rem;
+}
+
+.testimonial-review {
+    font-size: 1.2rem;
+    font-style: italic;
+    text-align: left;
+    color: #080034;
+    text-decoration: underline;
+}
+
+.testimonial-main {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.testimonial-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: 1rem;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.slick-prev, .slick-next {
+    background: #ccc;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.slick-prev {
+    left: -50px;
+}
+
+.slick-next {
+    right: -50px;
+}

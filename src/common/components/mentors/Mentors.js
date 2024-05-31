@@ -4,6 +4,8 @@ import { Carousel } from 'antd';
 import mentors from './mentorsData';
 import { Linkedin } from '../../images';
 
+import "./mentor.css"
+
 
 const Mentors = () => {
   return (
@@ -12,7 +14,7 @@ const Mentors = () => {
         We have Industry Experts as <Green text={'Mentor'} /> who guide you with <Green text={'Career Planning'} /> & <Green text={'Interview'} /> Preparation
       </div>
       <div className='text-black w-full'>
-        <Carousel slidesToShow={4}>
+        <Carousel slidesToShow={4} dots>
           {mentors.map((mentor, index) => (
             <div key={index} className="p-4 h-full">
               <div className="flex flex-col hover:scale-105 duration-700 w-full h-[28rem] items-center rounded shadow">

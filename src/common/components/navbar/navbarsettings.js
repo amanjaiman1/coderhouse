@@ -43,12 +43,12 @@ const navbarSettings = {
         {
             title: 'Notes',
             type: 'Link',
-            link: '/'
+            link: '/notes'
         },
         {
             title: 'Contact Us',
             type: 'Link',
-            link: '/'
+            link: '/contact'
         },
         {
             title: 'More',

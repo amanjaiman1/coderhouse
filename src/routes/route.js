@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import {
     Home, Login, SignUp, AboutUs, Courses,
-    Contact
+    Contact, Notes
 } from "../pages";
 // import PrivateResource from "./PrivateResources";
 
@@ -30,6 +30,10 @@ const routes = createBrowserRouter([
     {
         path: "/courses",
         element: <Courses />,
+    },
+    {
+        path:"/notes",
+        element: <Notes />
     }
 ]);
 
