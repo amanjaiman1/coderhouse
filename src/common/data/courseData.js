@@ -360,14 +360,32 @@ const notes = [
     {
         name: 'Data Structures & Algorithms',
         recentlyUpdate: '24 April 2024',
+        file: swayamPDF,
     },
     {
         name: 'Full Stack Development',
         recentlyUpdate: '24 April 2024',
+        file: swayamPDF,
     },
     {
         name: 'Advance Java Development',
         recentlyUpdate: '24 April 2024',
+        file: swayamPDF,
+    },
+    {
+        name: 'Android Development',
+        recentlyUpdate: '24 April 2024',
+        file: swayamPDF,
+    },
+    {
+        name: 'Cyber Security Course',
+        recentlyUpdate: '24 April 2024',
+        file: swayamPDF,
+    },
+    {
+        name: 'Data Science',
+        recentlyUpdate: '24 April 2024',
+        file: swayamPDF,
     },
 ]
 

@@ -4,6 +4,7 @@ import { Green } from '../green';
 import navbarSettings from './navbarsettings';
 import { Link } from 'react-router-dom';
 import { DownOutlined } from '@ant-design/icons';
+import { JoinUsButton } from '../buttons';
 
 const Navbar = () => {
   const [isHover, setIsHover] = useState(false);
@@ -30,8 +31,15 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
   return (
-    <div className={`w-full max-lg:hidden px-36 bg-secondary h-20 flex fixed top-0 z-50 ${isSticky ? 'shadow-md' : ''}`}> {/* Add shadow class on sticky */}
+    <div className={`w-full max-lg:hidden px-36 bg-secondary h-20 flex fixed top-0 z-50 ${isSticky ? 'shadow-md' : ''}`}>
       <div className="flex flex-row justify-between w-full">
         <div className="logo flex flex-row items-center text-3xl gap-4 font-medium">
           <a href='./'><img src={logo} alt="Logo of Coder House" className='w-[3.5rem] h-[3.5rem]' /></a>
@@ -54,7 +62,7 @@ const Navbar = () => {
                     {isHover && isHoverIndex === index && (
                       <div>
                         {item?.items?.map((subItem, subIndex) => (
-                          <div className='flex flex-row gap-1 items-center'>
+                          <div key={subIndex} className='flex flex-row gap-1 items-center'>
                             {subItem?.label}
                           </div>
                         ))}
@@ -65,15 +73,12 @@ const Navbar = () => {
               );
             } else if (item?.type === 'Link') {
               return (
-                <Link key={index} to={item?.link} onClick={() => setIsHover(false)}>{item?.title}</Link>
-              );
-            } else if (item?.type === 'Button') {
-              return (
-                <button key={index} className='text-secondary bg-primary rounded font-semibold text-lg px-4'>{item?.title}</button>
+                <Link key={index} to={item?.link} onClick={() => { setIsHover(false); scrollToTop(); }}>{item?.title}</Link>
               );
             }
             return null;
           })}
+          <JoinUsButton />
         </div>
       </div>
     </div>

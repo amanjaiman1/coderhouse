@@ -72,10 +72,6 @@ const navbarSettings = {
                 },
             ]
         },
-        {
-            title: 'Join Us',
-            type: 'Button',
-        }
     ],
     internships: [
         {
