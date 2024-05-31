@@ -7,7 +7,7 @@ const courses = [
         duration: '6 Months',
         key1: '2000+ Practice Questions',
         key2: 'Subscription to Coding Library',
-        key3: 'My name is Aman Jaiman',
+        key3: '',
         image: images.MERN,
         brochure: swayamPDF,
         higlights:'Hi my name is Aman',
