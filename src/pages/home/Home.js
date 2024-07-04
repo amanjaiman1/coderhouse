@@ -4,6 +4,7 @@ import { lineBlend, trial } from '../../common/images';
 import { excellentInfra, expertMentor, growthOriented } from '../../common/images';
 import { message } from 'antd';
 import Gallery from '../../common/components/gallery/Gallery';
+import CollegGallery from '../../common/components/CollegeGallery/Gallery'
 import { Testimonials } from '../../common/components/testimonials';
 const Home = () => {
 
@@ -122,6 +123,12 @@ const Home = () => {
       </div>
       <div className="mt-16 mb-4">
         <Programs />
+      </div>
+      <div className="mt-16 mb-4">
+        <Title title={'College Gallery'} />
+        <div className="mt-10">
+        <CollegGallery />
+        </div>
       </div>
       <div className="mt-16 mb-4">
         <Gallery />
