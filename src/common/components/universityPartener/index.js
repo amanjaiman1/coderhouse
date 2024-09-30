@@ -1,0 +1,1 @@
+export {default as Partener } from "./Partener"

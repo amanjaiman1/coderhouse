@@ -389,4 +389,123 @@ const notes = [
     },
 ]
 
-export { courses, plans, testimonial, notes };
+const onCampusCourses = [
+    {
+        name: '30 Days Crash-Course',
+        title: 'Basic Plan',
+        price: '₹ 2999',
+        actualPrice: '₹ 1000',
+        brochureUrl: swayamPDF,
+        benifits: [
+            {
+                title: 'Full Access to Recorded Videos',
+                isAvailable: true
+            },
+            {
+                title: 'Subscription to Coding Library',
+                isAvailable: true
+            },
+            {
+                title: '1000+ Practice Questions',
+                isAvailable: true
+            },
+            {
+                title: 'Attend Live Sessions',
+                isAvailable: false
+            },
+            {
+                title: 'Doubt Clearing Sessions',
+                isAvailable: false
+            },
+        ]
+    },
+    {
+        name: '45 Days Marathon',
+        title: 'Standard Plan',
+        price: '₹ 4999',
+        actualPrice: '₹ 1999',
+        brochureUrl: swayamPDF,
+        benifits: [
+            {
+                title: 'Full Access to Recorded Videos',
+                isAvailable: true
+            },
+            {
+                title: 'Subscription to Coding Library',
+                isAvailable: true
+            },
+            {
+                title: '1000+ Practice Questions',
+                isAvailable: true
+            },
+            {
+                title: 'Attend Live Sessions',
+                isAvailable: false
+            },
+            {
+                title: 'Doubt Clearing Sessions',
+                isAvailable: false
+            },
+        ]
+    },
+    {
+        name: '60 Days Marathon',
+        title: 'Premium Plan',
+        price: '₹ 7999',
+        actualPrice: '₹ 3500',
+        brochureUrl: swayamPDF,
+        benifits: [
+            {
+                title: 'Full Access to Recorded Videos',
+                isAvailable: true
+            },
+            {
+                title: 'Subscription to Coding Library',
+                isAvailable: true
+            },
+            {
+                title: '1000+ Practice Questions',
+                isAvailable: true
+            },
+            {
+                title: 'Attend Live Sessions',
+                isAvailable: false
+            },
+            {
+                title: 'Doubt Clearing Sessions',
+                isAvailable: false
+            },
+        ]
+    },
+    {
+        name: '6 Months Course',
+        title: 'Ultimate Premium',
+        price: '₹ 9999',
+        actualPrice: '₹ 4999',
+        brochureUrl: swayamPDF,
+        benifits: [
+            {
+                title: 'Full Access to Recorded Videos',
+                isAvailable: true
+            },
+            {
+                title: 'Subscription to Coding Library',
+                isAvailable: true
+            },
+            {
+                title: '1000+ Practice Questions',
+                isAvailable: true
+            },
+            {
+                title: 'Attend Live Sessions',
+                isAvailable: false
+            },
+            {
+                title: 'Doubt Clearing Sessions',
+                isAvailable: false
+            },
+        ]
+    }
+]
+
+export { courses, plans, testimonial, notes , onCampusCourses };

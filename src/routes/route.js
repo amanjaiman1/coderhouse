@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import {
     Home, Login, SignUp, AboutUs, Courses,
-    Contact, Notes
+    Contact, Notes, ONCAMPUS
 } from "../pages";
 // import PrivateResource from "./PrivateResources";
 
@@ -34,6 +34,9 @@ const routes = createBrowserRouter([
     {
         path:"/notes",
         element: <Notes />
+    },{
+        path: "/onCampus",
+        element: <ONCAMPUS />
     }
 ]);
 

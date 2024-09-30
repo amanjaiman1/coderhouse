@@ -34,7 +34,7 @@ const navbarSettings = {
                     key: '2',
                     label: (
                         <div className='w-full px-3 pt-1'>
-                            <Link to='/' className='hover:text-primary'>On-Campus Program</Link>
+                            <Link to='/oncampus' className='hover:text-primary'>On-Campus Program</Link>
                         </div>
                     ),
                 },

@@ -5,6 +5,8 @@ import "slick-carousel/slick/slick-theme.css";
 import './Gallery.css';
 import { Title } from '../title';
 
+import { galleryImage1, galleryImage2, galleryImage3, galleryImage4 } from '../../assets';
+
 const Gallery = () => {
     const settings = {
         dots: false,
@@ -19,10 +21,10 @@ const Gallery = () => {
     };
 
     const images = [
-        'https://via.placeholder.com/800x400?text=Image+1',
-        'https://via.placeholder.com/800x400?text=Image+2',
-        'https://via.placeholder.com/800x400?text=Image+3',
-        'https://via.placeholder.com/800x400?text=Image+4'
+        galleryImage1,
+        galleryImage2,
+        galleryImage3,
+        galleryImage4    
     ];
 
     return (

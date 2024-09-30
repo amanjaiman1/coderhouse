@@ -1,0 +1,11 @@
+.header{
+    font-size: 40px;
+}
+
+hr{
+    width: 30%; 
+    margin: auto; 
+    height: 4px; 
+    background-color:black; 
+    border: none;
+}

@@ -18,7 +18,7 @@
     line-height: 30px;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 1000;
+    /* z-index: 1000; */
   }
   
   .carousel-arrow-left {
