@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import "./index.css";
 import first from "../../assets/first.jpg";
@@ -10,12 +10,18 @@ const Carousel = ({ items, activeIndex }) => {
   const [active, setActive] = useState(activeIndex);
   const [direction, setDirection] = useState("");
 
+  // Using useCallback to memoize moveRight
+  const moveRight = useCallback(() => {
+    setActive((active + 1) % items.length);
+    setDirection("right");
+  }, [active, items.length]);
+
   useEffect(() => {
     const interval = setInterval(() => {
       moveRight();
     }, 3000); // Change image every 3 seconds
     return () => clearInterval(interval);
-  }, [active]);
+  }, [moveRight]);
 
   const generateItems = () => {
     const result = [];
@@ -32,15 +38,10 @@ const Carousel = ({ items, activeIndex }) => {
     return result;
   };
 
-  const moveLeft = () => {
+  const moveLeft = useCallback(() => {
     setActive((active - 1 + items.length) % items.length);
     setDirection("left");
-  };
-
-  const moveRight = () => {
-    setActive((active + 1) % items.length);
-    setDirection("right");
-  };
+  }, [active, items.length]);
 
   return (
     <div className="carousel-container noselect">
